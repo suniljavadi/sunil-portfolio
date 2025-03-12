@@ -10,16 +10,18 @@ header {
     background: #333;
     color: #fff;
     padding: 15px 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -27,6 +29,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
 }
 
 section {
@@ -38,18 +47,29 @@ section {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+.project {
+    margin-bottom: 20px;
 }
 
-.btn:hover {
-    background: #555;
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons li a:hover {
+    color: #555;
 }
 
 footer {
