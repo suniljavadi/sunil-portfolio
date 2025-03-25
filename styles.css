@@ -1,23 +1,156 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
     text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Header */
 header {
     background: #333;
     color: #fff;
-    padding: 15px 0;
+    padding: 20px;
     text-align: center;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+    margin: 0;
 }
 
-nav ul
-::contentReference[oaicite:0]{index=0}
- 
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(120deg, #0073e6, #00b3a6);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4949;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px 20px;
+    background: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill {
+    background: #0073e6;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Dark Mode Toggle */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+#theme-toggle:hover {
+    color: #ffcc00;
+}
