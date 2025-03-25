@@ -11,27 +11,52 @@
 <body>
     <header>
         <h1>Sunil Javadi</h1>
-        <p>SQL | SSIS | SSRS | Python | Data Science</p>
+        <p>SQL | SSIS | SSRS | Power BI | Python | Data Science</p>
+        <button id="theme-toggle">🌙</button> <!-- Dark Mode Toggle -->
     </header>
+    
     <nav>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./Projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section id="welcome">
-        <h2>Welcome</h2>
-        <p>Welcome to my portfolio! Explore my projects, learn more about my background, and feel free to get in touch.</p>
+
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a Data and Business Intelligence Specialist with expertise in SQL, SSIS, SSRS, Power BI, and Python. 
+           Explore my projects and feel free to reach out!</p>
+        <a href="projects.html" class="btn">View My Work</a>
+        <a href="contact.html" class="btn">Get in Touch</a>
     </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><i class="fas fa-database"></i> SQL & Database Management</div>
+            <div class="skill"><i class="fas fa-code"></i> Python & Automation</div>
+            <div class="skill"><i class="fas fa-chart-line"></i> Power BI & Data Visualization</div>
+            <div class="skill"><i class="fas fa-project-diagram"></i> SSIS & ETL Development</div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Sunil Javadi</p>
         <div class="social-icons">
-            <a href="https://github.com/suniljavadi/sunil-portfolio" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/suniljavadi" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        });
+    </script>
 </body>
 </html>
