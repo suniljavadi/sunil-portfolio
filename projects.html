@@ -3,81 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore data science and Power BI projects by Sunil Javadi, featuring HR Analytics, Netflix Recommendation System, Walmart Analysis, and more.">
-    <meta name="keywords" content="Sunil Javadi, Data Science, Power BI, Machine Learning, HR Analytics, Walmart Analysis, GitHub Projects">
-    <meta name="author" content="Sunil Javadi">
     <title>Projects - Sunil Javadi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <button id="theme-toggle">🌙</button>
     </header>
-
-    <main>
-        <section>
-            <h2>Data Science Projects</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <h3>HR Analytics</h3>
-                    <p>Data-driven insights on HR performance and employee behavior.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/HR%20Analytics" target="_blank" aria-label="View HR Analytics project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Netflix Recommendation System</h3>
-                    <p>Machine learning-based recommendation system for Netflix.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Netflix" target="_blank" aria-label="View Netflix project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>NumPy Basics</h3>
-                    <p>Understanding the fundamentals of NumPy for numerical computing.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Numpy" target="_blank" aria-label="View NumPy project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Pandas for Data Analysis</h3>
-                    <p>Comprehensive Pandas scripts for data manipulation and analysis.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Pandas" target="_blank" aria-label="View Pandas project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Purchase Case Study</h3>
-                    <p>Exploratory data analysis of purchasing behavior.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Purchase%20Case%20Study" target="_blank" aria-label="View Purchase Case Study project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Walmart Sales Analysis</h3>
-                    <p>Data analysis of Walmart sales trends and forecasting.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Walmart%20Project" target="_blank" aria-label="View Walmart Sales Analysis project on GitHub">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Covid-19 Data Analysis</h3>
-                    <p>Analyzing Covid-19 trends using data science techniques.</p>
-                    <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Covid-19" target="_blank" aria-label="View Covid-19 project on GitHub">View on GitHub</a>
-                </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Data Science Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/hr-analytics.png" alt="HR Analytics">
+                <h3>HR Analytics</h3>
+                <p>Analysis of employee attrition, performance, and retention trends.</p>
+                <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
+                <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/HR%20Analytics" target="_blank">View on GitHub</a>
             </div>
-        </section>
-
-        <section>
-            <h2>Power BI Projects</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <h3>Power BI Dashboard</h3>
-                    <p>Interactive Power BI dashboard showcasing various business insights.</p>
-                    <a href="https://github.com/suniljavadi/Power-BI" target="_blank" aria-label="View Power BI project on GitHub">View on GitHub</a>
-                </div>
+            <div class="project-card">
+                <img src="images/netflix.png" alt="Netflix Recommendation">
+                <h3>Netflix Recommendation</h3>
+                <p>Building a personalized movie recommendation system using machine learning.</p>
+                <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
+                <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Netflix" target="_blank">View on GitHub</a>
             </div>
-        </section>
-    </main>
-
+            <!-- More projects with improved descriptions and images -->
+        </div>
+    </section>
+    
+    <h2>Power BI Projects</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="images/powerbi.png" alt="Power BI">
+            <h3>Power BI Projects</h3>
+            <p>Collection of Power BI dashboards for various business insights.</p>
+            <p><strong>Technologies:</strong> Power BI, DAX, SQL</p>
+            <a href="https://github.com/suniljavadi/Power-BI" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    
+    <button id="back-to-top">⬆ Back to Top</button>
+    
     <footer>
-        <p>&copy; 2025 Sunil Javadi | <a href="contact.html">Contact Me</a></p>
+        <p>&copy; 2025 Sunil Javadi</p>
     </footer>
+    
+    <script>
+        // Smooth scrolling for back-to-top
+        document.getElementById("back-to-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        
+        // Dark mode toggle
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
