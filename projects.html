@@ -1,74 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Sunil Javadi</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Data Science, Machine Learning, Business Intelligence, and Web/SQL projects by Sunil Javadi." />
+  <meta name="keywords" content="Sunil Javadi, Data Science, Machine Learning, Power BI, SQL, GitHub, Portfolio" />
+  <meta name="author" content="Sunil Javadi" />
+  <title>Projects - Sunil Javadi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Inline styles for demonstration; ideally, use your external stylesheet -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    #theme-toggle {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      color: #fff;
+      cursor: pointer;
+    }
+    nav {
+      background: #444;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #555;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0073e6;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .project-card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #0073e6;
+    }
+    .project-card p {
+      font-size: 0.9em;
+      margin: 10px 0;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      transition: text-decoration 0.3s;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    /* Dark Mode Adjustments */
+    body.dark-mode header,
+    body.dark-mode nav,
+    body.dark-mode footer {
+      background: #1e1e1e;
+    }
+    body.dark-mode .project-card {
+      background: #1e1e1e;
+      border-color: #333;
+    }
+    body.dark-mode #back-to-top {
+      background: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .project-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Projects</h1>
-        <button id="theme-toggle">🌙</button>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <h2>Data Science Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="images/hr-analytics.png" alt="HR Analytics">
-                <h3>HR Analytics</h3>
-                <p>Analysis of employee attrition, performance, and retention trends.</p>
-                <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
-                <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/HR%20Analytics" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <img src="images/netflix.png" alt="Netflix Recommendation">
-                <h3>Netflix Recommendation</h3>
-                <p>Building a personalized movie recommendation system using machine learning.</p>
-                <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
-                <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Netflix" target="_blank">View on GitHub</a>
-            </div>
-            <!-- More projects with improved descriptions and images -->
-        </div>
-    </section>
-    
-    <h2>Power BI Projects</h2>
-    <div class="project-container">
+  <header>
+    <h1>Projects</h1>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Data Science & Machine Learning Projects -->
+    <section aria-labelledby="data-science-projects">
+      <h2 id="data-science-projects">Data Science & Machine Learning Projects</h2>
+      <div class="project-container">
         <div class="project-card">
-            <img src="images/powerbi.png" alt="Power BI">
-            <h3>Power BI Projects</h3>
-            <p>Collection of Power BI dashboards for various business insights.</p>
-            <p><strong>Technologies:</strong> Power BI, DAX, SQL</p>
-            <a href="https://github.com/suniljavadi/Power-BI" target="_blank">View on GitHub</a>
+          <h3>HR Analytics</h3>
+          <p>Data-driven insights on HR performance and employee behavior.</p>
+          <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/HR%20Analytics" target="_blank" aria-label="View HR Analytics on GitHub">View on GitHub</a>
         </div>
-    </div>
-    
-    <button id="back-to-top">⬆ Back to Top</button>
-    
-    <footer>
-        <p>&copy; 2025 Sunil Javadi</p>
-    </footer>
-    
-    <script>
-        // Smooth scrolling for back-to-top
-        document.getElementById("back-to-top").addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-        
-        // Dark mode toggle
-        document.getElementById("theme-toggle").addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-        });
-    </script>
+        <div class="project-card">
+          <h3>Netflix Recommendation System</h3>
+          <p>Machine learning-based recommendation system for Netflix.</p>
+          <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Netflix" target="_blank" aria-label="View Netflix Recommendation System on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>NumPy Basics</h3>
+          <p>Understanding the fundamentals of NumPy for numerical computing.</p>
+          <p><strong>Technologies:</strong> Python, NumPy</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Numpy" target="_blank" aria-label="View NumPy Basics on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Pandas for Data Analysis</h3>
+          <p>Comprehensive scripts for data manipulation and analysis.</p>
+          <p><strong>Technologies:</strong> Python, Pandas</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Pandas" target="_blank" aria-label="View Pandas for Data Analysis on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Purchase Case Study</h3>
+          <p>Exploratory analysis of purchasing behavior and trends.</p>
+          <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Purchase%20Case%20Study" target="_blank" aria-label="View Purchase Case Study on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Walmart Sales Analysis</h3>
+          <p>Data analysis of Walmart sales trends and forecasting.</p>
+          <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Walmart%20Project" target="_blank" aria-label="View Walmart Sales Analysis on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Covid-19 Data Analysis</h3>
+          <p>Analyzing Covid-19 trends using data science techniques.</p>
+          <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+          <a href="https://github.com/suniljavadi/Machine-Learning/tree/main/Covid19" target="_blank" aria-label="View Covid-19 Data Analysis on GitHub">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Intelligence & Power BI Projects -->
+    <section aria-labelledby="power-bi-projects">
+      <h2 id="power-bi-projects">Business Intelligence & Power BI Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Power BI Dashboard</h3>
+          <p>Interactive dashboard showcasing various business insights.</p>
+          <p><strong>Technologies:</strong> Power BI, DAX, SQL</p>
+          <a href="https://github.com/suniljavadi/Power-BI" target="_blank" aria-label="View Power BI Dashboard on GitHub">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Applications & SQL Projects -->
+    <section aria-labelledby="web-sql-projects">
+      <h2 id="web-sql-projects">Web Applications & SQL Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Streamlit Applications</h3>
+          <p>Interactive web applications built with Streamlit for data visualization.</p>
+          <p><strong>Technologies:</strong> Python, Streamlit</p>
+          <a href="https://github.com/suniljavadi/Streamlit" target="_blank" aria-label="View Streamlit Applications on GitHub">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>SQL Projects</h3>
+          <p>Various SQL scripts and projects for data manipulation and analysis.</p>
+          <p><strong>Technologies:</strong> SQL, T-SQL</p>
+          <a href="https://github.com/suniljavadi/SQL" target="_blank" aria-label="View SQL Projects on GitHub">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" aria-label="Back to Top">⬆</button>
+
+  <footer>
+    <p>&copy; 2025 Sunil Javadi | <a href="contact.html">Contact Me</a></p>
+  </footer>
+
+  <script>
+    // Show Back-to-Top button when scrolled down 200px
+    const backToTop = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 200 ? "block" : "none";
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Dark mode toggle with persistence
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    });
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
 </body>
 </html>
