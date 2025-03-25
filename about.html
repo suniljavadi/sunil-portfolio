@@ -7,72 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <h1>About Me</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- About Section -->
-<section class="about-container">
-    <div class="about-text">
-        <h2>Hello, I'm Sunil Javadi</h2>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Hi, I’m Sunil Javadi</h2>
         <p>
-            I am a <b>Data Enthusiast</b> specializing in <b>SQL, SSIS, SSRS, Python, Power BI, and Data Science</b>.  
-            Passionate about transforming raw data into <b>meaningful insights</b>, I work on <b>database optimization, data visualization, and analytics</b>.
+            I’m a data enthusiast with expertise in SQL, Python, SSIS, and Power BI. I love transforming raw data into meaningful insights to drive business decisions.
         </p>
-        <p><b>Key Skills:</b> SQL, Python, Power BI, DAX, Data Science, Machine Learning</p>
-        <a href="projects.html" class="btn">View My Projects</a>
-        <a href="Sunil_javadi_resume.pdf" class="btn" download>Download My Resume</a>
-    </div>
-    <div class="about-image">
-        <img src="profile.jpg" alt="Sunil Javadi">
-    </div>
-</section>
-
-<!-- Experience Timeline -->
-<section class="timeline">
-    <h2>My Journey</h2>
-    <div class="timeline-item fade-in">
-        <h3>🚀 2025 - Present: SQL Developer</h3>
-        <p>Working on <b>database optimization, SSIS workflows, and Power BI dashboards</b>.</p>
-    </div>
-    <div class="timeline-item fade-in">
-        <h3>🎓 2024: Completed Data Science Course</h3>
-        <p>Built <b>machine learning models</b> and explored <b>big data analytics</b>.</p>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 Sunil Javadi | <a href="index.html">Home</a></p>
-</footer>
-
-<!-- JavaScript for Scroll Animation -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const fadeElements = document.querySelectorAll(".fade-in");
-
-        function checkVisibility() {
-            fadeElements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.85) {
-                    el.classList.add("visible");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", checkVisibility);
-        checkVisibility();
-    });
-</script>
-
+        
+        <h2>My Expertise</h2>
+        <ul>
+            <li><strong>SQL & Database Management:</strong> Writing optimized queries, managing databases, and improving performance.</li>
+            <li><strong>SSIS & ETL:</strong> Developing and optimizing ETL pipelines for efficient data integration.</li>
+            <li><strong>Power BI:</strong> Creating insightful dashboards and reports for data-driven decision-making.</li>
+            <li><strong>Data Science & Python:</strong> Implementing machine learning models and data analysis solutions.</li>
+        </ul>
+        
+        <h2>My Achievements</h2>
+        <p>
+            ✅ Optimized ETL processes, reducing data processing time by <strong>30%</strong>.<br>
+            ✅ Developed Power BI dashboards, improving reporting efficiency for stakeholders.<br>
+            ✅ Contributed to open-source projects in data science and analytics.
+        </p>
+        
+        <h2>Let's Connect</h2>
+        <p>
+            Let’s connect and discuss how data can drive impactful decisions! Feel free to check out my projects or reach out to me on <a href="your-linkedin-url" target="_blank">LinkedIn</a>.
+        </p>
+        
+        <h2>Beyond Work</h2>
+        <p>
+            Outside of work, I enjoy exploring the latest advancements in AI, contributing to open-source projects, and mentoring aspiring data professionals.
+        </p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sunil Javadi</p>
+    </footer>
 </body>
 </html>
