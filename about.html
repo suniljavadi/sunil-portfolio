@@ -1,58 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sunil Javadi</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Sunil Javadi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Profile Image Styling */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    /* Section Titles */
+    .section-title {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #0073e6;
+      text-align: center;
+    }
+    /* Main Container with Animation */
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Achievements Hover Effect */
+    .achievements li:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    /* Call-to-Action Button */
+    .cta-btn {
+      background: #0073e6;
+      color: #fff;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background: #005bb5;
+    }
+    /* Center Connect Section */
+    .connect {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <h2>Hi, I’m Sunil Javadi</h2>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Sunil Javadi" class="profile-img" />
+      <h2 class="section-title">Hi, I’m Sunil Javadi</h2>
+      <p>
+        I’m a data enthusiast with expertise in SQL, Python, SSIS, and Power BI. I love transforming raw data into meaningful insights to drive business decisions.
+      </p>
+      
+      <h2 class="section-title">My Expertise</h2>
+      <ul>
+        <li><strong>SQL & Database Management:</strong> Writing optimized queries, managing databases, and improving performance.</li>
+        <li><strong>SSIS & ETL:</strong> Developing and optimizing ETL pipelines for efficient data integration.</li>
+        <li><strong>Power BI:</strong> Creating insightful dashboards and reports for data-driven decision-making.</li>
+        <li><strong>Data Science & Python:</strong> Implementing machine learning models and data analysis solutions.</li>
+      </ul>
+      
+      <h2 class="section-title">My Achievements</h2>
+      <ul class="achievements">
+        <li>✅ Optimized ETL processes, reducing data processing time by <strong>30%</strong>.</li>
+        <li>✅ Developed Power BI dashboards, improving reporting efficiency for stakeholders.</li>
+        <li>✅ Contributed to open-source projects in data science and analytics.</li>
+      </ul>
+      
+      <div class="connect">
+        <h2 class="section-title">Let's Connect</h2>
         <p>
-            I’m a data enthusiast with expertise in SQL, Python, SSIS, and Power BI. I love transforming raw data into meaningful insights to drive business decisions.
+          Let’s connect and discuss how data can drive impactful decisions! Check out my projects or reach out to me on 
+          <a href="https://www.linkedin.com/in/suniljavadi/" target="_blank">LinkedIn</a>.
         </p>
-        
-        <h2>My Expertise</h2>
-        <ul>
-            <li><strong>SQL & Database Management:</strong> Writing optimized queries, managing databases, and improving performance.</li>
-            <li><strong>SSIS & ETL:</strong> Developing and optimizing ETL pipelines for efficient data integration.</li>
-            <li><strong>Power BI:</strong> Creating insightful dashboards and reports for data-driven decision-making.</li>
-            <li><strong>Data Science & Python:</strong> Implementing machine learning models and data analysis solutions.</li>
-        </ul>
-        
-        <h2>My Achievements</h2>
-        <p>
-            ✅ Optimized ETL processes, reducing data processing time by <strong>30%</strong>.<br>
-            ✅ Developed Power BI dashboards, improving reporting efficiency for stakeholders.<br>
-            ✅ Contributed to open-source projects in data science and analytics.
-        </p>
-        
-        <h2>Let's Connect</h2>
-        <p>
-            Let’s connect and discuss how data can drive impactful decisions! Feel free to check out my projects or reach out to me on <a href="your-linkedin-url" target="_blank">LinkedIn</a>.
-        </p>
-        
-        <h2>Beyond Work</h2>
-        <p>
-            Outside of work, I enjoy exploring the latest advancements in AI, contributing to open-source projects, and mentoring aspiring data professionals.
-        </p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Sunil Javadi</p>
-    </footer>
+        <a href="contact.html" class="cta-btn">Contact Me</a>
+      </div>
+      
+      <h2 class="section-title">Beyond Work</h2>
+      <p>
+        Outside of work, I enjoy exploring the latest advancements in AI, contributing to open-source projects, and mentoring aspiring data professionals.
+      </p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Sunil Javadi</p>
+  </footer>
 </body>
 </html>
