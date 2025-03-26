@@ -153,7 +153,78 @@ nav ul li a:hover {
     background: #0073e6;
     border-radius: 5px;
 }
+/* Certification Section */
+#certifications {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
 
+#certifications h2 {
+    font-size: 2.5em;
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+}
+
+.certificate-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-card h3 {
+    font-size: 1.3em;
+    color: #0073e6;
+    margin-top: 10px;
+}
+
+.certificate-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.certificate-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #0073e6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.certificate-card a:hover {
+    background: #005bb5;
+}
+
+/* Back to Home Button */
+.back-home {
+    margin-top: 30px;
+}
 /* Hero Section */
 #hero {
     background: linear-gradient(120deg, #0073e6, #00b3a6);
