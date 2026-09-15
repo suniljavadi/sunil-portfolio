@@ -3,64 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Javadi - Portfolio</title>
+    <meta name="description" content="Sunil Javadi is an AI and GenAI engineer building practical LLM, RAG, agentic AI, and data engineering systems.">
+    <meta name="keywords" content="AI Engineer, Generative AI, GenAI, LLM, RAG, AI Agents, MCP, Python, Data Engineering, SQL, FastAPI">
+    <meta property="og:title" content="Sunil Javadi | AI / GenAI Engineer">
+    <meta property="og:description" content="Practical AI systems built on strong data engineering, SQL, ETL, and Python foundations.">
+    <meta property="og:type" content="website">
+    <title>Sunil Javadi | AI / GenAI Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Sunil Javadi</h1>
-        <p>SQL | SSIS | SSRS | Power BI | Python | Data Science</p>
-        <button id="theme-toggle">🌙</button> <!-- Dark Mode Toggle -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Sunil Javadi<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-             <li><a href="certificates.html">Certificates</a></li>
-        </ul>
-    </nav>
 
-    <section id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm a Data and Business Intelligence Specialist with expertise in SQL, SSIS, SSRS, Power BI, and Python. 
-           Explore my projects and feel free to reach out!</p>
-        <a href="projects.html" class="btn">View My Work</a>
-        <a href="contact.html" class="btn">Get in Touch</a>
-        <a href="resume.pdf" class="btn" download="Sunil_javadi_resume.pdf">
-            <i class="fas fa-file-download"></i> Download Resume
-        </a>
-    </section>
+    <main>
+        <section class="hero page-shell" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">AI / GenAI Engineer · Data &amp; AI</p>
+                <h1 id="hero-title">Building useful AI systems on real data.</h1>
+                <p class="hero-lede">I build practical AI systems that combine Python, LLMs, RAG, Agentic AI, SQL, and data engineering to solve real-world business and operational problems.</p>
+                <div class="button-row">
+                    <a class="button button-primary" href="projects.html#ai-projects">View AI Projects</a>
+                    <a class="button button-secondary" href="Javadisunil_AI_Engineer_Resume.pdf" download>Download Resume</a>
+                </div>
+                <div class="social-row" aria-label="Professional links">
+                    <a href="https://github.com/suniljavadi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-panel" aria-label="Engineering progression">
+                <span>Data Engineering</span><b>↓</b><span>SQL / ETL / BI</span><b>↓</b><span>Python / ML</span><b>↓</b><strong>LLMs / RAG / Agents</strong><b>↓</b><span>MCP / Production AI</span>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill"><i class="fas fa-database"></i> SQL & Database Management</div>
-            <div class="skill"><i class="fas fa-code"></i> Python & Automation</div>
-            <div class="skill"><i class="fas fa-chart-line"></i> Power BI & Data Visualization</div>
-            <div class="skill"><i class="fas fa-project-diagram"></i> SSIS & ETL Development</div>
-        </div>
-    </section>
+        <section class="page-shell section-block" aria-labelledby="build-title">
+            <div class="section-heading"><p class="eyebrow">Applied AI</p><h2 id="build-title">What I build</h2><p>Systems designed around a real workflow, reliable data, and a clear path to production.</p></div>
+            <div class="card-grid build-grid">
+                <article class="feature-card"><span class="card-index">01</span><h3>AI Assistants</h3><p>LLM-powered assistants for SQL, documentation, operations, and business workflows.</p></article>
+                <article class="feature-card"><span class="card-index">02</span><h3>RAG Systems</h3><p>Knowledge assistants using ingestion, embeddings, vector search, citations, and grounded responses.</p></article>
+                <article class="feature-card"><span class="card-index">03</span><h3>AI Agents</h3><p>Agents that use controlled tools and APIs to perform practical data and engineering tasks.</p></article>
+                <article class="feature-card"><span class="card-index">04</span><h3>Data Intelligence</h3><p>AI-powered SQL analysis, ETL troubleshooting, anomaly detection, and data-quality workflows.</p></article>
+                <article class="feature-card"><span class="card-index">05</span><h3>Document Intelligence</h3><p>Summarization, analysis, Q&amp;A, editing, and structured information extraction.</p></article>
+                <article class="feature-card"><span class="card-index">06</span><h3>Production AI</h3><p>FastAPI, Docker, evaluation, monitoring, security, and production-oriented architecture.</p></article>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Sunil Javadi</p>
-        <div class="social-icons">
-            <a href="https://github.com/suniljavadi" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
+        <section class="page-shell section-block" aria-labelledby="skills-title">
+            <div class="section-heading"><p class="eyebrow">Working toolkit</p><h2 id="skills-title">Skills with a data foundation</h2></div>
+            <div class="skills-grid">
+                <div class="skill-group"><h3>Generative AI</h3><div class="tag-list"><span>LLM Applications</span><span>Prompt Engineering</span><span>Embeddings</span><span>RAG</span><span>Vector Search</span><span>Tool Calling</span><span>Structured Outputs</span><span>AI Agents</span><span>Agentic Workflows</span><span>MCP</span></div></div>
+                <div class="skill-group"><h3>AI / Machine Learning</h3><div class="tag-list"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>NLP</span><span>Machine Learning</span><span>Deep Learning</span></div></div>
+                <div class="skill-group"><h3>Data Engineering</h3><div class="tag-list"><span>SQL Server</span><span>T-SQL</span><span>SSIS</span><span>ETL</span><span>Data Warehousing</span><span>PostgreSQL</span><span>Data Quality</span><span>Pipeline Design</span></div></div>
+                <div class="skill-group"><h3>Backend / Deployment</h3><div class="tag-list"><span>FastAPI</span><span>Streamlit</span><span>REST APIs</span><span>Docker</span><span>Git / GitHub</span><span>Testing</span><span>Logging</span><span>Evaluation</span></div></div>
+                <div class="skill-group"><h3>BI</h3><div class="tag-list"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Modelling</span><span>SSRS</span></div></div>
+            </div>
+        </section>
+    </main>
 
-    <script>
-        // Dark Mode Toggle
-        const themeToggle = document.getElementById("theme-toggle");
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-        });
-    </script>
+    <footer class="site-footer"><div class="footer-inner"><p>© 2026 Sunil Javadi</p><div><a href="https://github.com/suniljavadi" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:javadisunil@gmail.com">Email</a></div></div></footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,118 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Sunil Javadi</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Profile Image Styling */
-    .profile-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 20px auto;
-      display: block;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    /* Section Titles */
-    .section-title {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-      color: #0073e6;
-      text-align: center;
-    }
-    /* Main Container with Animation */
-    .about-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: left;
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    /* Achievements Hover Effect */
-    .achievements li:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s;
-    }
-    /* Call-to-Action Button */
-    .cta-btn {
-      background: #0073e6;
-      color: #fff;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
-      transition: background 0.3s;
-    }
-    .cta-btn:hover {
-      background: #005bb5;
-    }
-    /* Center Connect Section */
-    .connect {
-      text-align: center;
-      margin: 20px 0;
-    }
-  </style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Sunil Javadi, an AI and GenAI engineer with a foundation in data engineering, SQL, ETL, BI, and Python.">
+  <title>About | Sunil Javadi</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <div class="about-container">
-      <img src="profile.jpg" alt="Sunil Javadi" class="profile-img" />
-      <h2 class="section-title">Hi, I’m Sunil Javadi</h2>
-      <p>
-        I’m a data enthusiast with expertise in SQL, Python, SSIS, and Power BI. I love transforming raw data into meaningful insights to drive business decisions.
-      </p>
-      
-      <h2 class="section-title">My Expertise</h2>
-      <ul>
-        <li><strong>SQL & Database Management:</strong> Writing optimized queries, managing databases, and improving performance.</li>
-        <li><strong>SSIS & ETL:</strong> Developing and optimizing ETL pipelines for efficient data integration.</li>
-        <li><strong>Power BI:</strong> Creating insightful dashboards and reports for data-driven decision-making.</li>
-        <li><strong>Data Science & Python:</strong> Implementing machine learning models and data analysis solutions.</li>
-      </ul>
-      
-      <h2 class="section-title">My Achievements</h2>
-      <ul class="achievements">
-        <li>✅ Optimized ETL processes, reducing data processing time by <strong>30%</strong>.</li>
-        <li>✅ Developed Power BI dashboards, improving reporting efficiency for stakeholders.</li>
-        <li>✅ Contributed to open-source projects in data science and analytics.</li>
-      </ul>
-      
-      <div class="connect">
-        <h2 class="section-title">Let's Connect</h2>
-        <p>
-          Let’s connect and discuss how data can drive impactful decisions! Check out my projects or reach out to me on 
-          <a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank">LinkedIn</a>.
-        </p>
-        <a href="contact.html" class="cta-btn">Contact Me</a>
-      </div>
-      
-      <h2 class="section-title">Beyond Work</h2>
-      <p>
-        Outside of work, I enjoy exploring the latest advancements in AI, contributing to open-source projects, and mentoring aspiring data professionals.
-      </p>
-    </div>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html">Sunil Javadi<span>.</span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a><button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button></nav></div></header>
+  <main class="page-shell page-main">
+    <section class="intro-block"><p class="eyebrow">About the work</p><h1>Practical AI, grounded in enterprise data.</h1><p class="lead">I am an AI / GenAI Engineer with a strong foundation in data engineering and business intelligence. With 6+ years of experience across SQL, ETL, SSIS, SSRS, Power BI, Python, and data science, I build AI applications that can work with real enterprise data and operational workflows.</p><p>My current work spans machine learning, LLM applications, RAG, AI agents, tool calling, MCP, FastAPI, and production-oriented AI systems. The data-engineering background matters: reliable context, clear interfaces, validation, and operational constraints are part of the AI problem.</p></section>
+    <section class="split-section"><div><p class="eyebrow">Current focus</p><h2>From data foundations to agentic systems</h2></div><div class="focus-list"><span>Generative AI</span><span>RAG Systems</span><span>AI Agents</span><span>Tool Calling</span><span>MCP</span><span>LLM Applications</span><span>AI + Data Engineering</span><span>Production AI</span></div></section>
+    <section class="philosophy"><p class="eyebrow">Engineering philosophy</p><h2>Build practical systems, not demos.</h2><p>Use deterministic logic where it is appropriate, LLMs where semantic reasoning is needed, and structured outputs everywhere the system needs to stay predictable. Validation, evaluation, observability, security, and production readiness are design concerns, not afterthoughts.</p></section>
+    <section class="section-block"><div class="section-heading"><p class="eyebrow">Experience areas</p><h2>A connected toolkit</h2></div><div class="card-grid about-grid"><article class="feature-card"><h3>Data engineering</h3><p>SQL Server, T-SQL, SSIS, ETL, data warehousing, data quality, and pipeline design.</p></article><article class="feature-card"><h3>Analytics &amp; ML</h3><p>Power BI, DAX, Power Query, Python, Pandas, NumPy, machine learning, and deep learning foundations.</p></article><article class="feature-card"><h3>AI application engineering</h3><p>RAG, tool calling, agents, MCP, FastAPI, Streamlit, APIs, testing, logging, and evaluation.</p></article></div></section>
+    <div class="button-row"><a class="button button-primary" href="projects.html">Explore Projects</a><a class="button button-secondary" href="contact.html">Get in touch</a></div>
   </main>
-  <footer>
-    <p>&copy; 2025 Sunil Javadi</p>
-  </footer>
+  <footer class="site-footer"><div class="footer-inner"><p>© 2026 Sunil Javadi</p><div><a href="https://github.com/suniljavadi" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/sunil-javadi/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:javadisunil@gmail.com">Email</a></div></div></footer><script src="script.js"></script>
 </body>
 </html>
