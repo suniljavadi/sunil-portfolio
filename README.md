@@ -10,10 +10,10 @@ This repository contains my GitHub Pages portfolio and presents the verified AI 
 
 | Project | Type | Status | Link |
 | --- | --- | --- | --- |
-| AI Chatbot | Streamlit | 🟢 Live — Verified | [Open app](https://app-openai-chatbot-edkp7lvx2nwjnz4gatqk5u.streamlit.app/) |
-| Enterprise RAG | Streamlit | 🟢 Live — Verified | [Open app](https://rag-app-system-shxft5zzpqhv5jpxvmdhe3.streamlit.app/) |
-| Enterprise Text-to-SQL | Streamlit | 🟢 Live — Verified | [Open app](https://suniljavadi.streamlit.app/) |
-| Meeting Notes API | FastAPI | 🟢 Live — Verified | [Health](https://meeting-notes-professional-email.onrender.com/health) |
+| AI Chatbot | Streamlit | 🟡 Historical browser smoke test passed; current recheck rendered UI without a new response | [Open app](https://app-openai-chatbot-edkp7lvx2nwjnz4gatqk5u.streamlit.app/) |
+| Enterprise RAG | Streamlit | 🟡 Public page reachable; current semantic interaction not rechecked | [Open app](https://rag-app-system-shxft5zzpqhv5jpxvmdhe3.streamlit.app/) |
+| Enterprise Text-to-SQL | Streamlit | 🟡 Deterministic hosted demo mode rendered; hosted unsafe-query case pending | [Open app](https://suniljavadi.streamlit.app/) |
+| Meeting Notes API | FastAPI | 🟢 Health endpoint reachable; 11 local tests passed | [Health](https://meeting-notes-professional-email.onrender.com/health) |
 
 ## Core Skills
 
@@ -25,6 +25,7 @@ This repository contains my GitHub Pages portfolio and presents the verified AI 
 
 ## Featured Projects
 
+- [Enterprise AI Data Copilot](https://github.com/suniljavadi/enterprise-ai-data-copilot)
 - [Enterprise Text-to-SQL AI Agent](https://github.com/suniljavadi/Text-to-SQL-AI-Agent)
 - [Enterprise RAG Knowledge Assistant](https://github.com/suniljavadi/Enterprise-RAG-Confluence-Knowledge-Assistant)
 - [AI Log Analyzer & RCA Agent](https://github.com/suniljavadi/AI-Log-Analyzer-RCA-Agent)

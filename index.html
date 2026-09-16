@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="index.html">Sunil Javadi<span>.</span></a>
-            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
-            <nav class="site-nav" aria-label="Main navigation">
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
@@ -27,7 +28,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero page-shell" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="eyebrow">AI / GenAI Engineer · Data &amp; AI</p>
@@ -51,10 +52,10 @@
         <section class="page-shell section-block" aria-labelledby="live-demos-title">
             <div class="section-heading"><p class="eyebrow">Verified</p><h2 id="live-demos-title">🚀 Live AI Demos</h2></div>
             <div class="card-grid build-grid">
-                <article class="feature-card"><span class="card-index">01</span><h3>AI Chatbot</h3><p>Conversational assistant with a working public Streamlit deployment.</p><div class="button-row compact-row"><a class="button button-primary" href="https://app-openai-chatbot-edkp7lvx2nwjnz4gatqk5u.streamlit.app/" target="_blank" rel="noopener">Live Demo</a></div></article>
-                <article class="feature-card"><span class="card-index">02</span><h3>Enterprise RAG</h3><p>Retrieval-augmented Q&amp;A system with a verified public app.</p><div class="button-row compact-row"><a class="button button-primary" href="https://rag-app-system-shxft5zzpqhv5jpxvmdhe3.streamlit.app/" target="_blank" rel="noopener">Live Demo</a></div></article>
-                <article class="feature-card"><span class="card-index">03</span><h3>Text-to-SQL</h3><p>Schema-aware SQL generation app that is live and serving successfully.</p><div class="button-row compact-row"><a class="button button-primary" href="https://suniljavadi.streamlit.app/" target="_blank" rel="noopener">Live Demo</a></div></article>
-                <article class="feature-card"><span class="card-index">04</span><h3>Meeting Notes API</h3><p>Public FastAPI service with live health check and document-generation workflow.</p><div class="button-row compact-row"><a class="button button-primary" href="https://meeting-notes-professional-email.onrender.com" target="_blank" rel="noopener">Live API</a><a class="button button-secondary" href="https://meeting-notes-professional-email.onrender.com/health" target="_blank" rel="noopener">Health</a></div></article>
+                <article class="feature-card"><span class="card-index">01</span><h3>AI Chatbot</h3><p>Streamlit chatbot with a historical browser smoke test; current UI status is documented separately.</p><div class="button-row compact-row"><a class="button button-primary" href="https://app-openai-chatbot-edkp7lvx2nwjnz4gatqk5u.streamlit.app/" target="_blank" rel="noopener">Open App</a><a class="button button-secondary" href="https://github.com/suniljavadi/streamlit-openai-chatbot" target="_blank" rel="noopener">GitHub</a></div></article>
+                <article class="feature-card"><span class="card-index">02</span><h3>Enterprise RAG</h3><p>Retrieval-augmented Q&amp;A system with a reachable public page and documented retrieval limits.</p><div class="button-row compact-row"><a class="button button-primary" href="https://rag-app-system-shxft5zzpqhv5jpxvmdhe3.streamlit.app/" target="_blank" rel="noopener">Open App</a><a class="button button-secondary" href="https://github.com/suniljavadi/Enterprise-RAG-Confluence-Knowledge-Assistant" target="_blank" rel="noopener">GitHub</a></div></article>
+                <article class="feature-card"><span class="card-index">03</span><h3>Text-to-SQL</h3><p>Schema-aware SQL demo rendered in deterministic hosted mode; connected backend behavior is a separate claim.</p><div class="button-row compact-row"><a class="button button-primary" href="https://suniljavadi.streamlit.app/" target="_blank" rel="noopener">Open App</a><a class="button button-secondary" href="https://github.com/suniljavadi/Text-to-SQL-AI-Agent" target="_blank" rel="noopener">GitHub</a></div></article>
+                <article class="feature-card"><span class="card-index">04</span><h3>Meeting Notes API</h3><p>FastAPI service with a reachable health endpoint and locally tested analysis workflow.</p><div class="button-row compact-row"><a class="button button-primary" href="https://meeting-notes-professional-email.onrender.com" target="_blank" rel="noopener">Open API</a><a class="button button-secondary" href="https://github.com/suniljavadi/Meeting-Notes-Professional-Email" target="_blank" rel="noopener">GitHub</a><a class="button button-secondary" href="https://meeting-notes-professional-email.onrender.com/health" target="_blank" rel="noopener">Health</a></div></article>
             </div>
         </section>
 

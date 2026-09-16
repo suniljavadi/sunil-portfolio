@@ -32,6 +32,9 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 
+.skip-link { position: absolute; left: 12px; top: -48px; z-index: 100; background: var(--accent); color: var(--ink-inverse); padding: 10px 16px; border-radius: 6px; text-decoration: none; transition: top .2s ease; }
+.skip-link:focus { top: 12px; }
+
 .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 93%, transparent); backdrop-filter: blur(14px); }
 .header-inner { width: min(1160px, calc(100% - 40px)); min-height: 78px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { color: var(--text); font-family: var(--serif); font-size: 1.35rem; font-weight: 700; text-decoration: none; letter-spacing: .02em; }
