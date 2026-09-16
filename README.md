@@ -25,7 +25,6 @@ This repository contains my GitHub Pages portfolio and presents the verified AI 
 
 ## Featured Projects
 
-- [Enterprise AI Data Copilot](https://github.com/suniljavadi/enterprise-ai-data-copilot)
 - [Enterprise Text-to-SQL AI Agent](https://github.com/suniljavadi/Text-to-SQL-AI-Agent)
 - [Enterprise RAG Knowledge Assistant](https://github.com/suniljavadi/Enterprise-RAG-Confluence-Knowledge-Assistant)
 - [AI Log Analyzer & RCA Agent](https://github.com/suniljavadi/AI-Log-Analyzer-RCA-Agent)
