@@ -26,6 +26,7 @@ This repository contains my GitHub Pages portfolio and presents the verified AI 
 ## Featured Projects
 
 - [Enterprise Text-to-SQL AI Agent](https://github.com/suniljavadi/Text-to-SQL-AI-Agent)
+- [Jev SQL Agent Router](https://github.com/suniljavadi/jev-sql-agent-router) — Jev decision routing, strict human approval, and audited SQL execution
 - [Enterprise RAG Knowledge Assistant](https://github.com/suniljavadi/Enterprise-RAG-Confluence-Knowledge-Assistant)
 - [AI Log Analyzer & RCA Agent](https://github.com/suniljavadi/AI-Log-Analyzer-RCA-Agent)
 - [Meeting Notes to Professional Email](https://github.com/suniljavadi/Meeting-Notes-Professional-Email)
@@ -40,6 +41,7 @@ Fresh validation confirms the following project-level evidence:
 - AI Log Analyzer: 6 tests passed
 - Enterprise RAG: 8 tests passed
 - Enterprise Text-to-SQL: 10 tests passed
+- Jev SQL Agent Router: 55 tests passed; Python 3.12 and Docker image CI passed
 
 ## What I Build
 
