@@ -41,7 +41,7 @@ Fresh validation confirms the following project-level evidence:
 - AI Log Analyzer: 6 tests passed
 - Enterprise RAG: 8 tests passed
 - Enterprise Text-to-SQL: 10 tests passed
-- Jev SQL Agent Router: 55 tests passed; Python 3.12 and Docker image CI passed
+- Jev SQL Agent Router: 56 tests passed; Python 3.12 and Docker image CI passed; app not publicly hosted
 
 ## What I Build
 
