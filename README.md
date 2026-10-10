@@ -68,3 +68,7 @@ Generative AI, RAG systems, AI agents, tool calling, MCP, text-to-SQL, AI + data
 - [LinkedIn](https://www.linkedin.com/in/sunil-javadi/)
 - [GitHub](https://github.com/suniljavadi)
 - [Email](mailto:javadisunil@gmail.com)
+
+## Private Job Search Agent
+
+This repository also contains a separate, review-first job discovery service. See [JOB_AGENT.md](JOB_AGENT.md) for its setup, supported public board integrations, application safety boundaries, and current limitations.
